@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────
+#  Text-to-SQL  ·  Configuration
+#  Edit this file once, then run:  streamlit run ui/app.py
+# ─────────────────────────────────────────────
+
+database:
+  # Supported types: sqlite | postgresql | mysql
+  type: sqlite
+
+  # --- SQLite (default) ---
+  # Path to your .db / .sqlite file (absolute or relative to project root)
+  path: sample.db
+
+  # --- PostgreSQL / MySQL (uncomment and fill if needed) ---
+  # host: localhost
+  # port: 5432          # 5432 for postgres, 3306 for mysql
+  # name: mydb
+  # user: myuser
+  # password: mypassword
+
+llm:
+  # Ollama model to use. Run `ollama list` to see what's installed.
+  # Good choices: llama3, mistral, sqlcoder, codellama
+  model: llama3
+
+  # Ollama server URL (default works if Ollama is running locally)
+  base_url: http://localhost:11434
+
+app:
+  # Max rows returned per query (safety limit)
+  max_rows: 500
+
+  # Allow only SELECT queries (recommended: true)
+  readonly: true
