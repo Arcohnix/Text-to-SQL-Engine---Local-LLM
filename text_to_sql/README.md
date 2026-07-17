@@ -76,8 +76,4 @@ text_to_sql/
 - By default, only `SELECT` queries are allowed (`readonly: true` in config).
 - Results are capped at `max_rows` (default 500) to avoid memory issues.
 - Both settings are configurable in `config.yaml`.
-# Text-to-SQL-Engine---Local-LLM
-# Text-to-SQL-Engine---Local-LLM
-# Text-to-SQL-Engine---Local-LLM
-# Text-to-SQL-Engine---Local-LLM
-# Text-to-SQL-Engine---Local-LLM
+
